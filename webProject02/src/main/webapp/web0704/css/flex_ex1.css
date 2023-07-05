@@ -1,0 +1,71 @@
+@import url(common/reset.css);
+.flex_container{
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    border: 5px solid;
+    margin: 0 auto;
+    display: flex;
+
+    flex-direction: row;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    
+    /* justify-content: flex-end; */
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around;   */
+    /* justify-content: space-evenly;   */
+    
+    /* align-items: center; */
+
+    /* align-content: center; */
+    /* align-content: flex-end; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+}
+.flex_container .item{
+    /* width: 100px; */
+    height: 40px;
+    line-height: 40px;
+    border: 3px solid #ff0000;
+    box-sizing: border-box;
+    /* padding: 0 30px; */
+    /* float: left; */
+    flex:1 ;
+}
+/* .flex_container::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+.flex_container .item:nth-child(1){
+    background-color: #ff0000;
+    /* order: 5; */
+    /* flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex: 1 1 100px; */
+    flex: 0 0 400px;
+}
+.flex_container .item:nth-child(2){
+    background-color: #ff7300;
+    /* order: 2; */
+    /* flex: 1 1 100px; */
+}
+.flex_container .item:nth-child(3){
+    background-color: #ffff00;
+    /* order: 4; */
+    /* flex: 1 1 100px; */
+}
+.flex_container .item:nth-child(4){
+    background-color: #00ff00;
+    /* order 3; */
+    /* flex: 1 1 100px; */
+}
+.flex_container .item:nth-child(5){
+    background-color: #0000ff;
+    /* order: 1; */
+    /* flex: 1 1 1; */
+}

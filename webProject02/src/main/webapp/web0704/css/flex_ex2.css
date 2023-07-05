@@ -1,0 +1,40 @@
+@import url(common/reset.css);
+.header{
+    width: 100%;
+    height: auto;
+    border: 10px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.header .nav{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border: 1px solid #cccccc;
+    display: flex;
+    justify-content: space-between;
+}
+.header .nav h1.logo{
+    width: 120px;
+    height: 60px;
+    border: 1px solid #ff0000;
+    box-sizing: border-box;
+}
+.header .nav .gnb{
+    width: 500px;
+    height: auto;
+    border: 1px solid #ff7300;
+    box-sizing: border-box;
+}
+.header .nav .gnb>ul{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+}
+.header .nav .gnb>ul>li{
+    /* flex:1 ; */
+    border: 1px solid;
+    padding: 0 10px;
+    line-height: 60px;
+}

@@ -1,0 +1,29 @@
+/* 기본 스타일 */
+/* 기본 스타일 Alt + Shift + 아래 방향키 (한줄복사)*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    width: 150px;
+    height: 50px;
+    background-color: #102030;
+    color: #ffffff;
+}
+div{
+    width: 50px;
+    height: 30px;
+    background-color: #ff0000;
+    color: #ffff00;
+}
+/* div태그중에서 id가 div1 */
+div#div1{
+    width: 200px;
+    background-color: #0000ff;
+}
+/* div태그중에서 class가 div2 */
+div.div2{
+    width: 300px;
+    background-color: #000000;
+    color: #ffffff;
+}

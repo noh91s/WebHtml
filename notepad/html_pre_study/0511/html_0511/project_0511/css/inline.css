@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    /* 밑줄 none(X) */
+    text-decoration: none;
+    color: #000000;
+
+}
+    /* 클래스 선택자 태그명.클래스명 */
+.nav{
+    width: 400px;
+    background-color: #f13321;
+    /* 부모의 가로 가운데 */
+    margin: 0 auto;
+    /* 자식 요소의 가로 정렬 */
+    text-align: center;
+}
+/*a{
+    width: 10px;
+    height: 30px;
+    background-color: #ffff00;
+}*/
+.section{
+    width: 400px;
+    background-color: #ffdadd;
+    margin: 0 auto;
+}
+/* 인라인 요소 -> width,height 설정 가능 */
+.section img{
+    width: 100px;
+}
+.section2{
+    width: 400px;
+    background-color: #f040dd;
+    margin: 0 auto;
+}
+/* div 클래스 section2 하위 a 태그 하위에 위치한 이미지 */
+.section2 a img{
+    width: 50px;
+    height: 50px;
+}
+/* 블록요소(부모) 크기, 위치 설정 */
+.section3{
+    width: 400px;
+    margin: 0 auto;
+    background-color: #cccccc;
+    text-align: center;
+}
+.section3 span{
+    /* width: 50px; */
+    /* padding: 5px 10px; */
+    background-color: #0000ff;
+    color: #ffffff;
+}

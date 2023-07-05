@@ -1,0 +1,19 @@
+http://w3.org -> 웹 표준을 만듬, 권고, 유효성검사
+http://wa.or.kr/ -> 웹 접근성 
+https://accessibility.kr/ ->웹 접근성 자가진단
+https://developer.mozilla.org/ko/ -> 웹관련 기본 사이트("조금 어렵다")
+https://www.w3schools.com/ -> 다양한 예제("쉬운편")
+https://caniuse.com/ -> 트랜드
+https://gs.statcounter.com/ -> 순위, 브라우저, OS,,,,
+https://pixabay.com/ko/   -> 무료이미지 
+https://iconmonstr.com/  -> 무료아이콘
+
+google  -> 드라이버
+git
+notion
+trelo
+
+
+
+
+

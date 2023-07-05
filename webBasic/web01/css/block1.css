@@ -1,0 +1,33 @@
+div{
+    border: 1px solid #ff0000;
+}
+div h1{
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ff0000;
+}
+div h2{
+    height: 50px;
+    border: 1px solid #0000ff;
+}
+div h3{
+    width: 80px;
+    height: 50px;
+    border: 1px solid #000000;
+    background-color: #0ff0f0;
+}
+div h4{
+    width: 60px;
+    height: 30px;
+    background-color: #440340;
+}
+div h5{
+    width: 100px;
+    height: 40px;
+    background-color: #34faa0;
+}
+div h6{
+    width: 50px;
+    height: 30px;
+    background-color: #777d73;
+}

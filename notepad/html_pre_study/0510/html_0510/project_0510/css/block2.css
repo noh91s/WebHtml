@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrap{
+    width: 1200px;
+    height: 600px;
+    background-color: #cc77cc;
+    /* 부모의 가로 가운데 */
+    margin: 0 auto;
+    
+}
+#wrap .header{
+    width: 100%;
+    height: 100px;
+    background-color: #00ff00;
+    /* 텍스트(글색상) */
+    color: #ffffff; 
+    /* 텍스트(크기) */
+    font-size: 30px;
+    /* 텍스트의 가로정렬 기본 left */
+    text-align: center;
+    /* 세로 가운데 방법1 */
+    line-height: 100px;
+}
+#wrap .container{
+    width: 100%;
+    height: 400px;
+    background-color: #040f0f;
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center;
+    /* 세로 가운데 방법2 */
+    line-height: 400px;
+}
+#wrap .footer{
+    width: 100%;
+    height: 100px;
+    background-color: #053000;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}

@@ -1,0 +1,124 @@
+** form(회원가입, 로그인)
+- 사용자의 입력 정보를 서버에 전송 하는 요소 -> ** name , value
+<form action=”서버주소” method=”전송방식” id=””>
+<!--사용자 정보 입력 -->
+</form>
+
+1. form 속성
+action -> form 안의 사용자 입력 값을 전송할 서버주소
+method -> 전송방식
+get -> 기본 ,생략가능 ** 사용자 정보가 표시 O
+post -> 주로 사용, ** 사용자 정보가 표시 X
+name -> 폼의 name -> name값 정할때 예약어(키워드)를 사용하지 않는다
+id -> 폼의 id
+enctype -> 저장, 전송될 파일 유형
+name=value & name=value & name=value
+userId=222 & userPw=222 & userName=22
+
+2. input type -> 사용자 정보 입력 방식
+
+1)input 속성 <input type="text" id="userId" class="icalss" max-lenght="10"
+size="10" >
+type ->input 타입 -> 필수
+name->서버에전송할 key(이름) -> 필수
+id -> 아이디
+class->클래스
+size -> 길이 -> input의 width 제한
+max-length ->입력 글자수 제한
+placeholder ->기본 표시될 텍스트 -> 실제 입력시 사라진다.
+
+2)input type -> 사용자 정보 입력 방식
+<input type="타입" name="서버에전송할 key(이름)" id class max-length size>
+input[type=text] -> 직접 사용자가 텍스트를 입력 (입력값==value)
+input[type=password] -> 비빌번호등과 같은 **** 입력(입력값==value)
+input[type=radio] -> 하나만 선택 ** 반드시 name 같아야된다. (남여,필수) -> checked(자
+동선택) (checked==value)
+input[type=checkbox] -> 다중 선택 **반드시 name 같아야된다. (취미,전공신청)->
+checked(자동선택) (checked==value)
+input[type=select]-> 하나만 선택(콤보상자) ** -> selected(자동선택)(selected==value)
+input[type=reset]-> form입력 요소 초기화
+input[type=button]-> 이벤트(클릭등)를 통해서 함수를 호출(call) 하기 위한 타입
+input[type=submit]-> 폼의 사용자 정보를 서버에 전송하게 실행 시키는 타입
+-> click후 action의 서버주소 폼안의 정보를 서버에 전송
+-> 기본이벤트 중지 -> event.preventDefault();
+textarea -> 다중 텍스트 글입력-> 메모, 자기소개
+
+3. label -> input요소에 이름
+** input요소의 id과 연관성 있게 for를 이용해서 연결 한다.
+input -> 사용자의 입력 타입(type)
+<input type=”” size =크기>
+input:text -> 사용자 값을 입력 , 아이디 ,주소 ,전화번호
+input:password ->비밀번호 -> *****
+input:radio -> 하나만 선택-> 남/ 여 여러선택 요소 중에서 하나만
+-> 여러 선택자들은 name 값이 같아야 된다.
+-> 실제 서버 전송 값은 value에 값을 설정 한다
+<input type=”radio” name =”값” value=”남자” > 남
+<input type=”radio” name =”값” value=”여자” > 여
+input:checkbox -> 다중 선택 가능 -> 취미,관심사 -> 하나 이상의 값을 선택
+-> 여러 선택자들은 name 값이 같아야 된다.
+<input type=”radio” name =”취미” value=”등산” > 등산
+<input type=”radio” name =”취미” value=”영화감상” > 영화감상
+input:button -> 이벤트를 통해서 함수를 호출 하는 역할 -> 자바스크립트 이용해서 실행
+<input type=”button” value=”아이디체크” onclick=”함수()” id="btn">
+document.querySelector('#btn').addEventListener('click',()=>{})
+input:submit -> 폼 정보를 전송하게 하는 역할
+<input type=”submit” value=”회원가입” >
+input:reset -> 값이 초기화 -> form 의 입력값이 초기화
+<input type =”reset” value=”초기화”>
+<form action="joinOk.do">
+<input type="text" id="userId">
+<input type="submit" id="btn">
+</form> //(event)
+document.querySelector('#btn').addEventListener('click',(e)=>{
+//event.preventDefault()
+e.preventDefault()
+});
+기본이벤트를 중지 -> event.preventDefault();
+<a href="http://daum.net" id="a1">이벤트</a>
+<input type="submit" value="회원가입실행" id="joinOkBtn" class="l5" />
+버튼 --> 이벤트 -> 함수
+<input type="button" value="회원가입실행" id="joinOkBtn" class="l5" />
+textarea -> 여러줄 텍스트 입력, 소개글, 방명록,게시판
+-> row 행수, cols 열수
+->< textarea row=”10” cols=”10” name=””> </textarea>
+select -> 옵션을 선택 , 콤보 상자 -> 생년월일,우편번호,전화번호,selected(기본선택옵션)
+-> <select name>
+<option value=”값” selected>::전화번호 선택::</option>
+<option value=”값”>010</option>
+<option value=”값”>012</option>
+<option value=”값”>013</option>
+</select>
+
+ HTML5 추가된
+input:email -> 이메일 입력 -> @입력
+
+ 사용자 입력 값에 대한 유효성 검사-> 백엔드 개발쪽에서 설정
+input:file -> 파일 처리
+label -> input의 name값과 연결 시켜야 된다
+table -> 최근 백엔드 개발
+list->ul->li -> 최근 목록 태그를 이용하여 제작
+table -> 규격화된 구조, 변동이 적은 구조, 목록형 구조, 회원가입 ,로그인, 게시판 P56
+-> 규격화된 구조, 목록형 구조 -> 리스트태그 대체 ,ul,li
+-> 백 엔드 개발자 사용빈도가 높다.
+-> 블록태그
+-> 자동으로 크기가 조절, 값을 설정한 요소를 제외한 테이블의 크기는 자동으로 균
+등 처리
+-> 열의 최상단에 너비를 설정하면 하위 구조는 자동으로 설정
+-> 실제 작업시에는 값을 설정
+->
+<table>
+<tr>
+<td>데이터 1행 1열</td>
+<td>데이터 1행 2열</td>
+</tr>
+</table>
+tr->테이블의 행
+td-> 테이블의 컨텐츠, 열
+th-> 자동으로 가로정렬 ,글꼴 굵게
+참고사이트 W3schools.com
+
+ 기본적인 테이블 태그의 여백을 제거하기 위한 속성
+cellpadding, cellspacing -> HTML5 지원하지 않는다, 대신 border-collapse; 사용
+tr.tr2 td:nth-child(1) -> tr의 클래스 tr2하위 td의 첫번째요소
+tr.tr2 td:nth-child(2) -> tr의 클래스 tr2하위 td의 두번째요소
+tr.tr2 td:nth-child(3) -> tr의 클래스 tr2하위 td의 세번째요소

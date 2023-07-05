@@ -1,0 +1,46 @@
+/* 기본 스타일 설정 */
+*{
+  margin: 0;
+  padding: 0;
+}
+/* 기본 스타일 설정 */
+
+h1{
+  width: 200px;
+  height: 100px;
+  background-color: #ff0000 ;
+}
+h2{
+  width: 150px;
+  height: 80px;
+  background-color: #ffff00;
+}
+h3{
+  width: 120px;
+  height: 60px;
+  background-color: #00ff00;
+}
+h4{
+  width: 100px;
+  height: 50px;
+  background-color: #ff00ff;
+}
+h5{
+  width: 80px;
+  height: 40px;
+  background-color: #0000ff;
+}
+h6{
+  /* ctr + /  주석 */
+  /* width: 50px; */
+  height: 30px;
+  background-color: #cccccc;
+}
+
+
+
+
+
+
+
+

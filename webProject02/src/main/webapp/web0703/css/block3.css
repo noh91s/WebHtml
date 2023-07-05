@@ -1,0 +1,52 @@
+@import url(common/reset.css);
+p.p1{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #ff0000;
+    /* 컨텐츠가 부모요소를 벋어나면 숨겨라 */
+    /* overflow: hidden; */
+    /* 컨텐츠가 부모요소를 벗어나면 scroll 생성 */
+    /* overflow: scroll; */
+    overflow-y: auto;
+    text-align: left;
+    /* text-align: right; */
+    /* 밑줄 */
+    text-decoration: underline;
+    /* text-decoration: dashed; */
+    text-indent: 20px;
+    line-height: 30px;
+}
+p.p2{
+    width: 500px;
+    height: auto;
+    
+    color: #0000ff;
+    /* border: 1px solid #ff0000; */
+    border: 10px solid #ff0000;
+    
+    line-height: 30px;
+    font-size: 20px;
+    /* 고딕체 */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: '궁서';
+    /* 명조 */
+    font-weight: bold;
+    font-style: italic;
+    padding: 50px;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+
+
+
+    }
+p.p2 span.s1{
+    font-style: normal;
+    color: #ff00ff;
+    text-decoration: underline;
+    
+}
+div{
+    height: 100px;
+}

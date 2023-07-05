@@ -1,0 +1,23 @@
+#wrap	w100%;hauto border:1px solid #ff0000;
+	.header w100%;hauto border:1px solid #ff0000;
+		.nav w100%;max-width:1400;가로가운데(margin:0 auto) border:1px solid #ff0000;
+			.h1 .logo w120;h60 왼쪽(float:left)
+			.gnb w500;hauto 오른쪽(float:right)
+				.ul
+				.ul>li*5 w20%;h60 float:left (가로정렬)
+			float 설정시 float설정 다음에 오는 블록태그에 clear:both 설정을 해야한다
+			float
+			-> 부모의 좌우에 위치~ 부모의 높이(auto설정시)는 사라진다
+			-> 위의 성질을 없애기 위해서 clear:both 스타일 다음의 블록요소나 가상태그를 만들어서 설정
+			li 다음의 가상블록태그르 만드는 방법		
+			li::after{
+				content:"; /*반드시 작성*/
+				display:block;
+				clear:both;
+			}
+	.containner w%;hauto border:1px solid #ff0000;
+		.sections w100%;max-width:1600;가로가운데(margin:0 auto) border:1px solid #ff0000;
+			.sections.sec1 	w100%;h400 border:1px solid #ff0000;
+			.sections.sec2	w1200;h300 ;가로가운데(margin:0 auto) border:1px solid #ff0000;
+	.footer w%;hauto border:1px solid #ff0000;
+		.fcon w100%;max-width:1400;가로가운데(margin:0 auto) border:1px solid #ff0000;
