@@ -1,0 +1,60 @@
+/* header */
+.header{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    position: sticky;
+    top:0;
+}
+.header .nav{
+    width: 1200px;
+    height: auto;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.header .nav h1.logo{
+    width: 120px;
+    height: auto;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+.header .nav h1.logo a img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.header .nav .gnb{
+    width: auto;
+    height: auto;
+    /* border: 1px solid; */
+}
+.header .nav .gnb>ul{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+
+}
+.header .nav .gnb>ul>li{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    line-height: 60px;
+    background-color: #ffffff;
+    color: #0b0404;
+    border-radius: 10px;
+}
+.header .nav .gnb>ul>li a{
+    color: inherit;
+    display: block;
+    padding: 0 20px;
+}
+.header .nav .gnb>ul>li:hover{
+    background-color: #1d1d0e;
+    color: #ffffff;
+}

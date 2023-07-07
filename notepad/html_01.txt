@@ -350,6 +350,8 @@ border-left- : 왼쪽
 border-top- : 위쪽
 border-right- : 오른쪽
 border-bottom : 아래쪽
+border-radius -> 테두리 모양  정사각형의 반지름으로 4곳에 설정(정원) (왼위 오른위 오른아래 왼 아래)
+border-radius 50% -> 정사각형일 경우 정원이 된다
 
 기본 box-sizing 설정시 에는 실제 크기는 border+컨텐츠크키
 
@@ -429,3 +431,13 @@ background : 색상 이미지경로 반복유무 위치/크기
 background : #cccccc url(이미지 경로) no repeat 50%/cover
 background : 색상
 background : url(이미지경로) no-repeat 50%/cover
+
+vh, vw 기준이 브라우저 기준 scroll은 제외
+
+100vw -> 브라우저 너비의 100% -> width:100% -> 부모의 100% 브라우저+다른태그
+100vh -> 브라우저 높이의 100% -> height:100% -> 부모의 100% 브라우저+다른태그
+
+css calc함수 -> 계산(width, height)
+cal()
+
+cal( 100vh - 100px - 184px)

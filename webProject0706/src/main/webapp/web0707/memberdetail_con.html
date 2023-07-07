@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원상세조회</title>
+    <link rel="stylesheet" href="css/memberdetail_con.css">
+</head>
+<body>
+    <div class="container">
+        <div class="memberdetail">
+
+            <div class="memberdetail-con">
+
+                <div class="memberdetail-title">
+                    <h1 class="category-logo">
+                        <a href="index.do"><img src="images/category-logo.png" alt="category"></a>
+                    </h1>
+                    <div class="category">
+                        <ul>
+                            <li><a href="#">SPRING</a></li>
+                            <li><a href="#">SUMMER</a></li>
+                            <li><a href="#">FALL</a></li>
+                            <li><a href="#">WINTER</a></li>
+                            <li><a href="#">BEST</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="memberdetail-data">
+                   
+                            <div class="data-con">
+                                <div class="left-con">
+                                    <img src="http://via.placeholder.com/200x400/cccccc55/ffffff?text=sample" alt="sample">
+                                </div>
+                                <div class="right-con">
+                                    <h1>""님 회원정보</h1>
+                                    <form action="memberupdate.do" method="POST" class="form">
+                                            <ul>
+                                                <li>
+                                                    
+                                                    <span><label for="member_id">회원번호</label></span>
+                                                    <input type="text" name="member_id" id="member_id"
+                                                    value="<%=Meberdetail.getMember_id()%>" readonly="true" />
+                                                </li>
+                                                <li>
+                                                    <span><label for="name">이름</label></span>
+                                                    <input type="text" name="name" id="name"
+                                                    value="<%=Meberdetail.getName()%>" />
+                                                </li>
+                                                <li>
+                                                    <span><label for="password">비밀번호</label></span>
+                                                    <input type="text" name="password" id="password"
+                                                    value="<%=Meberdetail.getPassword()%>" />
+                                                </li>
+                                                <li>
+                                                    <span><label for="email">이메일</label></span>
+                                                    <input type="text" name="email" id="email" 
+                                                    value="<%=Meberdetail.getEmail()%>" readonly="true" />
+                                                </li>
+                                                <li>
+                                                    <span><label for="phone">전화번호</label></span>
+                                                    <input type="text" name="phone" id="phone"
+                                                    value="<%=Meberdetail.getPhone()%>" />
+                                                </li>
+                                                <li>
+                                                    <span><label for="address">주소</label></span>
+                                                    <input type="text" name="address" id="address"
+                                                    value="<%=Meberdetail.getAddress()%>" />  
+                                                </li>
+                                                <li>
+                                                    <span><label for="grade">등급</label></span>
+                                                    <input type="text" name="grade" id="grade"
+                                                    value="<%=Meberdetail.getGrade()%>" />  
+                                                </li>
+                                                <li>
+                                                    <span><label for="city">출신지</label></span>
+                                                    <input type="text" name="city" id="city"
+                                                    value="<%=Meberdetail.getCity()%>" /> 
+                                                </li>
+                                                <li>
+                                                    <span><label for="create_time">가입날짜</label></span>
+                                                    <input type="text" name="create_time" id="create_time"
+                                                    value="<%=Meberdetail.getCreatetime()%>" /> 
+                                                </li>
+                                                <li>
+                                                    <span class="no"></span>
+                                                    <input type="submit" value="회원정보수정실행" class="button"/>
+                                                    <span class="no"></span>
+                                                </li>
+                                            </ul>                              
+                                    </form>
+                                     
+                                </div>
+                            </div>
+                 
+                </div>
+    
+            </div>
+        </div>
+    </div>     
+</body>
+</html>

@@ -1,0 +1,113 @@
+.container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+.container .memberlist{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container .memberlist .memberlist-con{
+    flex-basis: 1600px;
+    /* border: 1px solid; */
+}
+.container .memberlist .memberlist-con .memberlist-title{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center ;
+    /* background-color: #cccccc; */
+}
+.container .memberlist .memberlist-con .memberlist-title h1.category-logo{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    flex-basis: 60px;
+}
+.container .memberlist .memberlist-con .memberlist-title h1.category-logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* .container .memberlist .memberlist-con .memberlist-title .category{
+    /* border: 1px solid; */
+    /* box-shadow: ; */
+/* } */
+.container .memberlist .memberlist-con .memberlist-title .category ul{
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    gap: 5px;
+}
+.container .memberlist .memberlist-con .memberlist-title .category ul li a{
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 21px;
+    border-radius: 20px;
+}
+.container .memberlist .memberlist-con .memberlist-title .category ul li a:hover{
+    background-color: #449e30;
+    color: #ffffff;
+}
+.container .memberlist .memberlist-con .memberlist-data{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+.container .memberlist .memberlist-con .memberlist-data>ul{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    grid-auto-rows: minmax(400px, auto);
+    gap: 5px;
+}
+.container .memberlist .memberlist-con .memberlist-data>ul>li{
+    /* border: 3px solid #ff0000; */
+    box-shadow: 0px 0px 4px #000000;
+}
+.container .memberlist .memberlist-con .memberlist-data>ul>li .data-con{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.container .memberlist .memberlist-con .memberlist-data>ul>li .data-con .left-con{
+    flex: 1;
+}
+.container .memberlist .memberlist-con .memberlist-data>ul>li .data-con .left-con img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.container .memberlist .memberlist-con .memberlist-data>ul>li .data-con .right-con{
+    flex: 1;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+.container .memberlist .memberlist-con .memberlist-data>ul>li .data-con .right-con>ul{
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* gap: 10px; */
+    /* padding: 20px 0; */
+}
+.container .memberlist .memberlist-con .memberlist-data>ul>li .data-con .right-con>ul>li{
+    line-height: 20px;
+
+    /* border: 1px solid; */
+}
+.container .memberlist .memberlist-con .memberlist-data>ul>li .data-con .right-con>ul>li span{
+    display: inline-block;
+    width: 60px;
+    /* border: 1px solid; */
+    font-size: 12px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}

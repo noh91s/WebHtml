@@ -1,0 +1,45 @@
+@import url(common/reset.css);
+.container{
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.container .shop{
+    flex-basis: 1200px ;
+    height: auto;
+    border: 1px solid;
+}
+.container .shop h1.title{
+    background-color: #6cacd7;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+.container .shop .shop-con{
+    border: 1px solid;
+    padding: 10px;
+}
+.container .shop .shop-con >ul{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(2, minmax(400px, auto)); */
+    /* grid-template-rows: repeat(2, auto); */
+    grid-template-rows: repeat(2, minmax(100px, auto));
+     /* 초과 행  */
+    grid-auto-rows: minmax(400px, auto);
+    gap: 10px;
+}
+.container .shop .shop-con >ul>li {
+    border: 1px solid #ff0000;
+}
+.container .shop .shop-con >ul>li img{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}

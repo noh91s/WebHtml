@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline</title>
+    <link rel="stylesheet" href="css/common/reset.css">
+    <style>
+        .inline1 a{
+            width: 100px;
+            height: 50px;
+            background-color: #ff0000;
+        }
+        .img{
+            border: 10px solid;
+        }
+        .img img{
+            border: 1px solid #ff0000;
+            display: block;
+        }
+        .flex_img{
+            width: 1400px;
+            height: auto;
+            border: 1px solid;
+        }
+        .flex_img>ul{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+        .flex_img>ul>li{
+            /* 부모기준으로 1:1:1 */
+            flex:1 ; 
+            /* 기본설정 li */
+            /* width: 400px; */
+            border: 3px solid;
+        }
+        .flex_img>ul>li img{
+            /* 이미지 처리 스타일 기본 */
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        /* .flex_img >ul>li{
+            float: left;
+        }
+        .flex_img >ul>li::after{
+            content: '';
+            display: block;
+            clear: both;
+        } */
+    </style>
+</head>
+<body>
+    <div class="flex_img">
+        <ul>
+            <li><img src="images/pix_01.jpg" alt="pix_01이미지"></li>
+            <li><img src="images/pix_02.jpg" alt="pix_02이미지"></li>
+            <li><img src="images/pix_03.jpg" alt="pix_03이미지"></li>
+        </ul>
+    </div>
+    <div class="inline1">
+        <a href="https://naver.com" target="_blank">네이버</a>
+        <a href="https://daum.net">다음</a>
+        <span>★</span>
+        <span>☆</span>
+    </div>
+    <div class="gnb">
+        <ul>
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+            <li><a href="#">MENU5</a></li>
+        </ul>
+    </div>
+    <div class="img">
+        <div style="border: 1px solid;">
+            <img src="images/pix_01.jpg" alt="pix_01이미지">
+        </div>
+        <div style="border: 1px solid;">
+            <img src="images/pix_02.jpg" alt="pix_02이미지">
+        </div>
+        <!-- <img src="images/pix_03.jpg" alt="pix_03이미지">
+        <img src="images/pix_04.jpg" alt="pix_04이미지">
+        <img src="images/pix_05.jpg" alt="pix_05이미지">
+        <img src="images/pix_06.jpg" alt="pix_06이미지">
+        <img src="images/pix_07.jpg" alt="pix_07이미지"> -->
+    </div>
+    <hr>
+   
+</body>
+</html>

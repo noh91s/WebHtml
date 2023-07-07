@@ -1,0 +1,113 @@
+@import url(common/reset.css);
+.container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+.container .memberdetail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container .memberdetail .memberdetail-con{
+    flex-basis: 1600px;
+    /* border: 1px solid; */
+}
+.container .memberdetail .memberdetail-con .memberdetail-title{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center ;
+    /* background-color: #cccccc; */
+}
+.container .memberdetail .memberdetail-con .memberdetail-title h1.category-logo{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    flex-basis: 60px;
+}
+.container .memberdetail .memberdetail-con .memberdetail-title h1.category-logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* .container .memberlist .memberlist-con .memberlist-title .category{
+    /* border: 1px solid; */
+    /* box-shadow: ; */
+/* } */
+.container .memberdetail .memberdetail-con .memberdetail-title .category ul{
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    gap: 5px;
+}
+.container .memberdetail .memberdetail-con .memberdetail-title .category ul li a{
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 21px;
+    border-radius: 20px;
+}
+.container .memberdetail .memberdetail-con .memberdetail-title .category ul li a:hover{
+    background-color: #449e30;
+    color: #ffffff;
+}
+.container .memberdetail .memberdetail-con .memberdetail-data{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+.container .memberdetail .memberdetail-con .memberdetail-data .data-con{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    max-height: 400px;
+}
+/* .container .memberdetail .memberdetail-con .memberdetail-data .data-con .left-con{
+    /* flex: 1; */
+/* } */ 
+.container .memberdetail .memberdetail-con .memberdetail-data .data-con .left-con img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.container .memberdetail .memberdetail-con .memberdetail-data .data-con .right-con{
+    /* flex: 1; */
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+.container .memberdetail .memberdetail-con .memberdetail-data .data-con .right-con h1{
+    background-color: #000000;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+}
+.container .memberdetail .memberdetail-con .memberdetail-data .data-con .right-con .form>ul>li{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 6px;
+
+}
+.container .memberdetail .memberdetail-con .memberdetail-data .data-con .right-con .form>ul>li span{
+    background-color: #7eb871;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px;
+}
+.container .memberdetail .memberdetail-con .memberdetail-data .data-con .right-con .form>ul>li input{
+    background-color: #78beb6;
+}
+.container .memberdetail .memberdetail-con .memberdetail-data .data-con .right-con .form>ul>li .button{
+    background-color: #091312;
+    color: #ffffff; 
+    font-size: 14px;
+    padding: 5px;
+}.container .memberdetail .memberdetail-con .memberdetail-data .data-con .right-con .form>ul>li .no{
+    padding: 0px;
+}

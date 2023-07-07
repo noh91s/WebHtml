@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 페이지</title>
     <link rel="stylesheet" href="css/join.css">
+    <script src="js/joinOk.js" defer></script>
 </head>
 <body>
     <div class="wrap">
@@ -47,7 +48,10 @@
                         </tr>
                         <tr>
                             <td><label for="email">이메일</label></td>
-                            <td><input type="email" name="email" id="email" class="s2"><input type="button" value="E-Checked"></td>
+                            <td class="email">
+                                <input type="email" name="email" id="email">
+                                <input type="button" value="E-Checked" id="emailChecked">
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="phone">전화번호</label></td>
@@ -72,9 +76,11 @@
                     <tfoot>
                         <tr>
                             <td colspan="2">
-                                <a href="index.html">HOME</a>
-                                <input type="reset" value="초기화">
-                                <input type="submit" value="회원가입실행">
+                                <div class="sub">
+                                <a href="index.html" class="t1">HOME</a>
+                                <input type="reset" value="초기화" class="t1">
+                                <input type="submit" value="회원가입실행" class="t1">
+                                </div>
                             </td>
                         </tr>
                     </tfoot>

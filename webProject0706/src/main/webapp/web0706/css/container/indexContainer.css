@@ -1,0 +1,71 @@
+/* container */
+.container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #ff0000; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.container .index {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    /* border: 1px solid #cccccc; */
+    box-sizing: border-box;
+   
+    /* padding: 30px 20px;
+    box-shadow: 1px 3px 10px #222222; */
+}
+.container .index .sections .section{
+    width: 100%;
+    height: auto;
+    /* border: 5px solid; */
+    box-sizing: border-box;
+}
+.container .index .sections .section.sec1{
+    height: 600px;
+    margin-bottom: 20px;
+    /* 諛곌꼍�씠誘몄� �꽕�젙(湲곕낯) */
+    /* background-image: url(../images/sec1.jpg); /* �씠誘몄� 寃쎈줈 */
+    /* background-repeat: no-repeat; �씠誘몄� 諛섎났�쑀臾� */
+    /* background-position: 50% 50%; �씠誘몄� �쐞移� */
+    /* background-size: cover; �씠誘몄� �겕湲� �꽕�젙 */
+
+    background : url(../../images/sec1.jpg) no-repeat 50%/cover ;
+    
+    text-align: center;
+    line-height: 600px;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 1px 2px 3px #000000;
+}
+.container .index .sections .section.sec2{
+    display: flex;
+    justify-content: center;
+    /* background-color: #cccccc; */
+}
+.container .index .sections .section.sec2 .con{
+    width: 1200px;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+.container .index .sections .section.sec2 .con>ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+.container .index .sections .section.sec2 .con>ul>li{
+    flex: 1;
+    /* width: 33%; */
+    /* padding: 10px; */
+    /* box-sizing: border-box; */
+}
+.container .index .sections .section.sec2 .con>ul>li img{
+    display: block;
+}
+
+
+

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,23 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 페이지</title>
     <link rel="stylesheet" href="css/join.css">
+    <script src="js/joinOk.js" defer></script>
 </head>
 <body>
     <div class="wrap">
         <div class="header">
             <div class="nav">
                 <h1 class="logo">
-                    <a href="index.html">
+                    <a href="index.do">
                         <img src="images/logo.png" alt="logo_120*60">
                     </a>
                 </h1>
                 <div class="gnb">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#">SHOPMALL</a></li>
+                        <li><a href="index.do">HOME</a></li>
+                        <li><a href="memberlist.do">MEMBERLIST</a></li>
                         <li><a href="#">ADMIN</a></li>
-                        <li><a href="join.html">MEMBERJOIN</a></li>
-                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="join.do">MEMBERJOIN</a></li>
+                        <li><a href="login.do">LOGIN</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +50,10 @@
                         </tr>
                         <tr>
                             <td><label for="email">이메일</label></td>
-                            <td><input type="email" name="email" id="email" class="s2"><input type="button" value="E-Checked"></td>
+                            <td class="email">
+                                <input type="email" name="email" id="email">
+                                <input type="button" value="E-Checked" id="emailChecked">
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="phone">전화번호</label></td>
@@ -72,9 +78,11 @@
                     <tfoot>
                         <tr>
                             <td colspan="2">
-                                <a href="index.html">HOME</a>
-                                <input type="reset" value="초기화">
-                                <input type="submit" value="회원가입실행">
+                                <div class="sub">
+                                <a href="index.do" class="t1">HOME</a>
+                                <input type="reset" value="초기화" class="t1">
+                                <input type="submit" value="회원가입실행" class="t1">
+                                </div>
                             </td>
                         </tr>
                     </tfoot>
